@@ -1,0 +1,39 @@
+# Created by Topology-Converter v4.6.9
+#    Template Revision: v4.6.9
+#    https://github.com/cumulusnetworks/topology_converter
+#    using topology data from: training-netq.dot
+
+
+
+
+[oob-switch]
+oob-mgmt-switch ansible_host=192.168.200.3
+
+
+
+
+
+
+
+[leaf]
+leaf02 ansible_host=192.168.200.1
+leaf01 ansible_host=192.168.200.2
+
+
+
+[spine]
+spine02 ansible_host=192.168.200.4
+spine01 ansible_host=192.168.200.5
+
+
+
+
+
+[host]
+netq-ts ansible_host=192.168.200.250
+server01 ansible_host=192.168.200.6
+
+
+[all:vars]
+ansible_user=cumulus
+ansible_ssh_pass=CumulusLinux!
